@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .team-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .nav-button {
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            background-color: #3a5a8c;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .team-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Team</h1>
+        <div class="team-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/placeholder.svg?height=250&width=300" alt="John Doe">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-name">John Doe</h2>
+                    <p class="card-description">Lead Developer with over 10 years of experience in web development. Specializes in front-end technologies and user experience design.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/placeholder.svg?height=250&width=300" alt="Jane Smith">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-name">Jane Smith</h2>
+                    <p class="card-description">Product Manager who excels at coordinating teams and ensuring projects are delivered on time. Has a background in UX research.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/placeholder.svg?height=250&width=300" alt="Alex Johnson">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-name">Alex Johnson</h2>
+                    <p class="card-description">Creative Designer with a passion for creating beautiful and functional interfaces. Brings a unique perspective to every project.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Button -->
+        <div class="navigation">
+            <a href="main.html" class="nav-button">Next Page →</a>
+        </div>
+    </div>
+</body>
+</html>
